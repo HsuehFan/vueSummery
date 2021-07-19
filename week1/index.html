@@ -53,8 +53,16 @@
                 </p>
                 <p class="card-text">description: {{ item.location.timezone.description }}</p>
                 <p class="card-text"><small class="text-muted">dob：{{ item.dob.date }}</small></p>
-                <p class="card-text"><small class="text-muted">registered：{{ item.registered.date }}</small></p>
-                <iframe width="100%" height="300" frameborder="0" scrolling="no"
+                <p class="card-text"><small class="text-muted"> registered：{{ item.registered.date }}</small></p>
+                .menu {
+                  font-size: 30px;
+                }
+                .menu li a {
+                  color: red;
+                }
+                .menu li a:hover {
+                  color: bule;
+                }                <iframe width="100%" height="300" frameborder="0" scrolling="no"
                   marginheight="0" marginwidth="0"
                   :src=`https://maps.google.com.tw/maps?f=q&hl=zh-TW&geocode=&q=${item.location.coordinates.latitude},${item.location.coordinates.longitude}&z=10&output=embed`></iframe>
               </div>
